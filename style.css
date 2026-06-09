@@ -138,3 +138,70 @@ footer {
   .hero { padding: 42px 18px 28px; }
   .card { padding: 18px; }
 }
+.photo-section {
+  max-width: 1060px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.photo-intro {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.photo-intro h2 {
+  color: #8a4600;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.photo-intro p {
+  color: #4b3a2a;
+  font-size: 1rem;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.photo-card {
+  background: #fffaf3;
+  border: 1px solid #ead8c2;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(80, 50, 20, 0.08);
+  margin: 0;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-card figcaption {
+  padding: 12px 14px;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: #6b3a08;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-card img {
+    height: 210px;
+  }
+}
